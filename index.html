@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <meta name="description" content="Log in to Cogie – Access your account with ease using a sleek, user-friendly interface. Sign in securely or create a new account in just a few clicks.">
-    <link rel="favicon" href="./assets/images/cogie.svg" type="image/svg">
+    <title>Cogie | Log in to Cogie</title>
+    <meta name="description"
+        content="Log in to Cogie - Access your account with ease using a sleek, user-friendly interface. Sign in securely or create a new account in just a few clicks.">
+    <link rel="icon" type="image/png" href="/assets/images/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Cogie" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family:  DM Sans, Inter, sans-serif;
+            font-family: DM Sans, Inter, sans-serif;
         }
 
         body {
@@ -20,17 +28,22 @@
             min-height: 100vh;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: Noto Serif Display, serif;
         }
-        
+
         main {
             width: 100%;
             min-height: 100%;
             background: white;
             display: flex;
         }
-        
+
         .background-section {
             padding: 30px;
             flex: 1 0 50%;
@@ -95,7 +108,7 @@
             font-size: clamp(30px, 3vw, 45px);
             font-weight: 500;
         }
-        
+
         form {
             margin-top: 30px;
             text-align: left;
@@ -150,12 +163,14 @@
             main {
                 flex-direction: column;
             }
+
             .form-section {
                 width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
     <main>
         <div class="background-section">
@@ -181,7 +196,9 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="Enter your password" required>
                     </div>
-                    <a href="#" style="text-decoration: none; color: rgb(20, 20, 20); font-weight: 500; align-self: flex-end; font-size: 14px;">Forgot password?</a>
+                    <a href="#"
+                        style="text-decoration: none; color: rgb(20, 20, 20); font-weight: 500; align-self: flex-end; font-size: 14px;">Forgot
+                        password?</a>
                     <div class="form-group">
                         <button class="submit" type="submit"> Sign in</button>
                     </div>
@@ -194,4 +211,5 @@
         </div>
     </main>
 </body>
+
 </html>
