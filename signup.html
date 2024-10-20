@@ -42,14 +42,13 @@
             min-height: 100%;
             background: white;
             display: flex;
+            flex-direction: row-reverse;
         }
 
         .background-section {
             padding: 30px;
-            flex: 1 0 50%;
-            min-height: 90vh;
             height: 100vh;
-            background: url(./assets/images/marquise-kamanke-jfQGc8Emf1Q-unsplash.jpg) no-repeat;
+            background: url(./assets/images/aefde16e6a985f88d743ab50eff7faf7.jpg) no-repeat;
             background-size: cover;
             color: white;
             position: sticky;
@@ -76,7 +75,6 @@
         }
 
         .form-section {
-            width: 50%;
             flex-grow: 1;
             min-height: 100%;
             padding: 20px;
@@ -127,7 +125,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .form-group .input-container {
             width: 100%;
             display: flex;
@@ -136,7 +134,7 @@
             position: relative;
         }
 
-        .form-group .input-container:has( .eye-button ) input {
+        .form-group .input-container:has(.eye-button) input {
             padding-right: 55px;
         }
 
@@ -194,7 +192,9 @@
             font-size: 14px;
             border-radius: 10px;
             position: absolute;
-            right: 2px; top: 2px; bottom: 2px;
+            right: 2px;
+            top: 2px;
+            bottom: 2px;
         }
 
         .eye-button ion-icon {
@@ -243,22 +243,19 @@
                     <div class="form-group">
                         <label for="password">Password:</label>
                         <div class="input-container">
-                            <input type="password" id="password" placeholder="Enter your password" required autocomplete>
+                            <input type="password" id="password" placeholder="Enter your password" required
+                                autocomplete>
                             <label for="password" class="eye-button" onclick="eyeButton()"><ion-icon name="eye-off-outline"></ion-icon></label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <a href="#"
-                        style="text-decoration: none; color: rgb(20, 20, 20); font-weight: 500; align-self: flex-end; font-size: 14px;">Forgot password?</a>
-                    </div>
-                    <div class="form-group">
-                        <button class="submit" type="submit"> Sign in</button>
+                        <button class="submit" type="submit"> Sign up</button>
                     </div>
                 </form>
             </div>
             <div class="form-footer">
-                <span>Don't have an account? </span>
-                <a href="./signup.html" style="font-weight: 700; color: black; text-decoration: none;">Sign up</a>
+                <span>Already have an account? </span>
+                <a href="./index.html" style="font-weight: 700; color: black; text-decoration: none;">Log in</a>
             </div>
         </div>
     </main>
